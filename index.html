@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Game</title>
+</head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+<body>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <h1>Crystal Collector</h1>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-sm">
+                <h3>How to play!</h3>
+                <p>
+                    (This is just filler, will replace with my own instructions)
+                    * The player will be shown a random number at the start of the game.
+                    * When the player clicks on a crystal, it will add a specific amount of points to the player's
+                    total score.
+                    * Your game will hide this amount until the player clicks a crystal.
+                    * When they do click one, update the player's score counter.
+                    * The player wins if their total score matches the random number from the beginning of the game.
+                    * The player loses if their score goes above the random number.
+                    * The game restarts whenever the player wins or loses.
+                    * When the game begins again, the player should see a new random number. Also, all the crystals
+                    will have four new hidden values. Of course, the user's score (and score counter) will reset to
+                    ze
+                    * The app should show the number of games the player wins and loses. To that end, do not refresh
+                    the page as a means to restart the game.</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="row number-row">
+        <div class="col-sm totalscorebox">
+            <span id="gemTotal"> Your Total Score is: </span> </div>
+        <div id="Random-Number" class="col-sm randomnumberbox">
+            <span>Random Number:</span>
+        </div>
+        <div class="col-sm winlosebox">
+            <span id="wins">Wins: </span>
+            <span id="losses">Losses:</span>
+        </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <img id="Pink-Gem" src="assets/images/new pink.jpg" alt="Pink Gem">
+            <img id="Blue-Gem" src="assets/images/pack-beautiful-gemstones_23-2147607953.jpg" alt="Blue Gem">
+            <img id="Red-Gem" src="/assets/images/new red.jpg" alt="Red Gem">
+            <img id="Yellow-Gem" src="/assets/images/new yellow.jpg" alt="yellow Gem">
+        </div>
+        <div class="col-sm-2"></div>
+        <div class="row">
+
+            <div class="col-sm"></div>
+            <div class="col-sm">
+                
+            </div>
+            <div class="col-sm"></div>
+
+        </div>
+
+
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+
+    <script type="text/Javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>
