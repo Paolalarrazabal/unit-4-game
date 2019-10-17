@@ -7,64 +7,77 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystal Game</title>
 </head>
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 <body>
+  
+    <div id = background-image> 
 
 
     <div class="container">
+       
         <div class="row">
-            <div class="col-sm">
-                <h1>Crystal Collector</h1>
-            </div>
-        </div>
-
-        <div class="row">
-
-            <div class="col-sm">
-                <h3>How to play!</h3>
-
+            <div class="col">
+                <h3>Crystal Collector</h3>
             </div>
 
-        </div>
-    </div>
-    <div class="row number-row">
-        <div class="col-sm totalscorebox">
-            <span id="gemTotal"> Your Total Score is: </span> </div>
-        <div id="Random-Number" class="col-sm randomnumberbox">
-            <span>Random Number:</span>
-        </div>
-        <div class="col-sm winlosebox">
-            <span id="wins">Wins: </span>
-            <span id="losses">Losses:</span>
-        </div>
-    </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-8">
-            <img id="Pink-Gem" src="assets/images/new pink.jpg" alt="Pink Gem">
-            <img id="Blue-Gem" src="assets/images/pack-beautiful-gemstones_23-2147607953.jpg" alt="Blue Gem">
-            <img id="Red-Gem" src="assets/images/new red.jpg" alt="Red Gem">
-            <img id="Yellow-Gem" src="assets/images/new yellow.jpg" alt="yellow Gem">
-        </div>
-        <div class="col-sm-2"></div>
-        <div class="row">
-
-            <div class="col-sm"></div>
-            <div class="col-sm">
-                
+            <div class="w-100"></div>
+            <div class="col">
+                <p>Try to match the # below by clicking on each gem!</p>
             </div>
-            <div class="col-sm"></div>
+        
+            <div class="w-100"></div>
+            <div id="Random-Number" class="col randomnumberbox">
+                    <span>Random Number:</span>
+                </div>
+        
+            <div class="w-100"></div>
+            <div class="col totalscorebox">
+                <span id="gemTotal"> Score so far: </span> </div>
+        
+                <div class="w-100"></div>
+                <div class="col images">
+                        <img id="Pink-Gem" src="assets/images/new pink.jpg" alt="Pink Gem">
+                        <img id="Blue-Gem" src="assets/images/pack-beautiful-gemstones_23-2147607953.jpg" alt="Blue Gem">
+                        <img id="Red-Gem" src="assets/images/new red.jpg" alt="Red Gem">
+                        <img id="Yellow-Gem" src="assets/images/new yellow.jpg" alt="yellow Gem">
+                </div>
+
+            <div class="w-100"></div>
+            <div class="col winlosebox">
+                    <span id="wins">Wins: </span>
+                    <span id="losses">Losses:</span>
+
+                </div>
 
         </div>
+    </div>
 
 
-    </div>
-    </div>
-    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+
+    <script type="text/Javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>
 
 
 
