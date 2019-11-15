@@ -16,29 +16,18 @@ $(document).ready(function() {
 	
 	
 	let GemTotal = 0;
-	console.log(GemTotal);
 	
 	
-	// resets the game when player wins/losses // 
-	
-	function startOver () {
-		randomNumber = Math.floor((Math.random() * 120) + 19);
-		document.getElementById("Random-Number").innerHTML = randomNumber;
-		pinkGem = Math.floor((Math.random() * 12) + 1);
-		blueGem = Math.floor((Math.random() * 12) + 1);
-		redGem = Math.floor((Math.random() * 12) + 1);
-		yellowGem = Math.floor((Math.random() * 12) + 1);
-		GemTotal = 0;
-		$('#gemTotal').text('Score so far: ' + GemTotal);
 	
 	
-	}
+
 	
 	// click events for each crystal // 
 	
 	$('#Pink-Gem').on('click', function() {
-	console.log(pinkGem);
+	
 	GemTotal = pinkGem + GemTotal;
+
 	$('#gemTotal').text('Score so far: ' + GemTotal);
 	if (GemTotal === randomNumber) {
 		wins ++;
@@ -54,7 +43,7 @@ $(document).ready(function() {
 	});
 	
 	$('#Blue-Gem').on('click', function() {
-	console.log(blueGem);
+
 	GemTotal = blueGem + GemTotal;
 	$('#gemTotal').text('Score so far: ' + GemTotal);
 	
@@ -72,7 +61,7 @@ $(document).ready(function() {
 	});
 	
 	$('#Red-Gem').on('click', function() {
-	console.log(redGem);
+	
 	GemTotal = redGem + GemTotal;
 	$('#gemTotal').text('Score so far: ' + GemTotal);
 	if (GemTotal === randomNumber) {
@@ -89,7 +78,7 @@ $(document).ready(function() {
 	});
 	
 	$('#Yellow-Gem').on('click', function() {
-	console.log(yellowGem);
+	
 	GemTotal = yellowGem + GemTotal;
 	$('#gemTotal').text('Score so far: ' + GemTotal);
 	if (GemTotal === randomNumber) {
@@ -105,10 +94,38 @@ $(document).ready(function() {
 	}
 	});
 	
+	// Restarts game and assigns new values // 
 	
+	function startOver () {
+		randomNumber = Math.floor((Math.random() * 120) + 19);
+		document.getElementById("Random-Number").innerHTML = randomNumber;
+		pinkGem = Math.floor((Math.random() * 12) + 1);
+		blueGem = Math.floor((Math.random() * 12) + 1);
+		redGem = Math.floor((Math.random() * 12) + 1);
+		yellowGem = Math.floor((Math.random() * 12) + 1);
+		GemTotal = 0;
+		$('#gemTotal').text('Score so far: ' + GemTotal);
 	
-		
+
+		// logging restart values // 
+
+		console.log('this is the score so far: ' + GemTotal);
+		console.log('this is the target number: ' + randomNumber);
+		console.log('pink: ' + pinkGem);
+		console.log('blue: ' + blueGem);
+		console.log('red: ' + redGem);
+		console.log('yellow: ' + yellowGem);
+
+	}
 	
+	// logging initial values // 
+
+	console.log('this is the score so far: ' + GemTotal);
+	console.log('this is the target number: ' + randomNumber);
+	console.log('pink: ' + pinkGem);
+	console.log('blue: ' + blueGem);
+	console.log('red: ' + redGem);
+	console.log('yellow: ' + yellowGem);
 	
 	
 	
